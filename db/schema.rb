@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140605183331) do
+ActiveRecord::Schema.define(version: 20140606183646) do
 
   create_table "centros", force: true do |t|
     t.string   "nombre"
@@ -45,6 +45,12 @@ ActiveRecord::Schema.define(version: 20140605183331) do
   end
 
   create_table "tipodocs", force: true do |t|
+    t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tiponovedads", force: true do |t|
     t.string   "nombre"
     t.datetime "created_at"
     t.datetime "updated_at"
